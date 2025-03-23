@@ -27,14 +27,17 @@ class FirstScreen(semanticProvides: SemanticsNodeInteractionsProvider) :
 
     val searchIcon = KNode(semanticProvides) {
         hasTestTag(C.SEARCH_ICON)
+        useUnmergedTree = true
     }
 
     val titleText = KNode(semanticProvides) {
         hasTestTag(C.TITLE_TEXT)
+        useUnmergedTree = true
     }
 
     val settingsButton = KNode(semanticProvides) {
         hasTestTag(C.SETTINGS_ICON)
+        useUnmergedTree = true
     }
 
     val headingText = KNode(semanticProvides) {
@@ -47,5 +50,6 @@ class FirstScreen(semanticProvides: SemanticsNodeInteractionsProvider) :
 
     val doneButton = KNode(semanticProvides) {
         hasTestTag(C.DONE_BUTTON)
+        useUnmergedTree = true
     }
 }
